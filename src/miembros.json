@@ -1,0 +1,48 @@
+{
+  "miembros": [
+    {
+      "id_miembro": 1,
+      "nombre": "Ana García",
+      "rol": "Baterista",
+      "email": "ana@example.com",
+      "telefono": "555-123-4567",
+      "disponibilidad": [
+        {
+          "fecha": "2024-01-10",
+          "rango_horario": ["10:00-12:00", "15:00-17:00"]
+        },
+        {
+          "fecha": "2024-01-12",
+          "rango_horario": ["18:00-20:00", "21:00-23:00"]
+        }
+      ],
+      "redes_sociales": {
+        "instagram": "anagarcia_insta",
+        "facebook": "ana.garcia.official",
+        "YouTube": "AnaGarciaDrummer"
+      }
+    },
+    {
+      "id_miembro": 2,
+      "nombre": "Juan Pérez",
+      "rol": "Guitarrista",
+      "email": "juan@example.com",
+      "telefono": "555-987-6543",
+      "disponibilidad": [
+        {
+          "fecha": "2024-01-10",
+          "rango_horario": ["08:00-10:00", "14:00-16:00"]
+        },
+        {
+          "fecha": "2024-01-15",
+          "rango_horario": ["09:00-11:00", "14:00-16:00"]
+        }
+      ],
+      "redes_sociales": {
+        "instagram": "juanperez_insta",
+        "facebook": "juan.perez.official",
+        "YouTube": "JuanPerezGuitar"
+      }
+    }
+  ]
+}
