@@ -1,0 +1,4 @@
+
+#GITIGNORE
+*.env
+*public/

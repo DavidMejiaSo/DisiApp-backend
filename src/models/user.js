@@ -1,39 +1,55 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 // Definir el esquema del usuario
-const UserSchema = mongoose.Schema({
+const UserSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
+        required: true,
+        trim:true
     },
     email: {
         type: String,
         required: true,
-        unique: true
+       
+        trim:true
+        
     },
     
     password: {
         type: String,
         required: true
     },
+    photo_url:{
+        type: String,
+        default: ''
+
+    },
     rol: {
         type: String,
-        required: true,
-        unique: true
+        required: true
+       
+    },
+    token: {
+        type: String,
+        required: true
+       
     },
     redes_sociales: {
         type: Object,
-        default: {}
+
+        default: {
+            Facebook: "",
+            Instagram: "",
+            TikTok: "",
+            X: ""
+        }
     },
     disponibilidad: {
         type: Array,
         default: []
     },
-    token_auth: {
-        type: String,
-       
-    }
-    ,
+    
+  
     date: {
         type: Date,
         default: Date.now
@@ -41,4 +57,4 @@ const UserSchema = mongoose.Schema({
 });
 
 // Crear y exportar el modelo de usuario
-module.exports = mongoose.model('User', UserSchema);
+export default mongoose.model('User', UserSchema);
