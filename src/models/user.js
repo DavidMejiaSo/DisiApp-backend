@@ -44,10 +44,7 @@ const UserSchema = new mongoose.Schema({
             X: ""
         }
     },
-    disponibilidad: {
-        type: Array,
-        default: []
-    },
+   
     
   
     date: {

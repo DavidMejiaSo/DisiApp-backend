@@ -5,7 +5,7 @@ import morgan  from    'morgan';
 import authRoutes from './routes/auth.routes.js';
 import usersRoutes from './routes/users.routes.js';
 import concertRoutes from './routes/concerts.routes.js';
-
+import userAgendaRoutes from './routes/user_agenda.routes.js';
 //_---------------------
 
 
@@ -18,6 +18,7 @@ app.use(express.static('public'));
 app.use('/api',authRoutes);
 app.use('/api',usersRoutes);
 app.use('/api',concertRoutes);
+app.use('/api',userAgendaRoutes);
 
 //app again 
 

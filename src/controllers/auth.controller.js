@@ -33,7 +33,7 @@ export const register = async (req, res) => {
             email: newUser.email,
             rol: newUser.rol,
             photo_url: '/uploads/' + req.file.filename,
-            disponibility: newUser.disponibilidad,
+         
             token: token
         });
     } catch (error) {
@@ -80,7 +80,7 @@ export const login = async (req,res)=> {
             username: userFound.name,
             email:userFound.email,
             rol: userFound.rol,
-            disponibility: userFound.disponibilidad,
+            
             photo_url:userFound.photo_url
             ,token:userFound.token
         
@@ -107,7 +107,7 @@ export const getUser = async  (req, res) => {
     username: userFound.name,
     email:userFound.email,
     rol: userFound.rol,
-    disponibility: userFound.disponibilidad,
+   
     photo_url:userFound.photo_url
     ,token:userFound.token
 })
